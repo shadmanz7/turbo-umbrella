@@ -1,5 +1,19 @@
+
+
+# Implementation - Series 1
+
 A = int(input())
 B = int(input())
 
 for i in range(A, B+1):
     print(i, end=" ")
+    
+  
+def mergeInterval(intervals):
+     result = []
+    i, j = 0, 1
+    while j < len(intervals):
+        a, b = intervals[i]
+        c, d = intervals[j]
+        if b >= c:
+    
